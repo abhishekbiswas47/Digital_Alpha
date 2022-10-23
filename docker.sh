@@ -8,4 +8,6 @@ echo "Running a docker container with the given image: $(docker run -itd --name 
 
 if [ $(echo $?) == 1 ]; then
 	echo "Docker setup is done!"
+else
+	echo "Docker setup failed!"
 fi
